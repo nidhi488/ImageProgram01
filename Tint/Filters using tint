@@ -1,0 +1,22 @@
+var img1, img2;
+
+function preload() {
+	img1 = loadImage('moon.jpg');
+  img2 = loadImage('earth.jpg');
+}
+
+function setup() { 
+  createCanvas(600, 600);
+} 
+
+function draw() { 
+  background(220);
+  tint(255, 0, 0, 255);
+  image(img1, 0, 0, 300, 300); 
+  tint(255, 128);
+  image(img2, 0, 300, 300, 300); 
+  tint(0, 255, 0, 50);
+  image(img1, 300, 0, 300, 300); 
+  noTint();
+  image(img2, 300, 300, 300, 300);
+}
